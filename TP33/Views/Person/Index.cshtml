@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model TP33.Models.Person
+
+@{
+    ViewData["Title"] = "PERSONS";
+}
+
+
+@{
+    Person p = Model; 
+    if ( Model == null){
+
+        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+
+            <div class="card-header">
+                Person not found 
+            </div>
+
+  </div>
+
+   }
+   else{
+
+       <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+            <div class="card-header">@p.FirstName </div>
+            <div class="card-body">
+                <h5 class="card-title">@p.Id</h5>
+                <h5 class="card-title">@p.LastName</h5>            
+                <h5 class="card-title">@p.Country</h5>
+                <h5 class="card-title">@p.Email</h5>
+                <h5 class="card-title">@p.image</h5>
+            </div>
+ 
+  </div>
+   }
+
+
+}

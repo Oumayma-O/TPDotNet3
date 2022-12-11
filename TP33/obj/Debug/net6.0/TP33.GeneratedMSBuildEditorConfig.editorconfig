@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\htc msi\source\repos\TP33\TP33
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/htc msi/source/repos/TP33/TP33/Views/Basic/shared.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzaWNcc2hhcmVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/htc msi/source/repos/TP33/TP33/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -25,6 +29,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/htc msi/source/repos/TP33/TP33/Views/Person/all.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXGFsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/htc msi/source/repos/TP33/TP33/Views/Person/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/htc msi/source/repos/TP33/TP33/Views/Person/search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXHNlYXJjaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/htc msi/source/repos/TP33/TP33/Views/Shared/Error.cshtml]

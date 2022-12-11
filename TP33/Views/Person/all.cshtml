@@ -1,9 +1,54 @@
-﻿@*
-   
-For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model List<TP33.Models.Person>
+
+
+
 @{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "All_Persons";
 
 }
+<div style="display: flex;justify-content:space-evenly; align-items:center;width:100% ">
+    <h1> ALL Persons</h1>
+    <h3>
+      
+    </h3>
+</div>
+
+<div>
+
+    <table class="table" >
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">first_name</th>
+                <th scope="col">last_name</th>
+                <th scope="col">email</th>
+                @* <th scope="col">Date_birth</th>*@
+                <th scope="col">image</th>
+                <th scope="col">country</th>
+            </tr>
+        </thead>
+        @{
+            foreach (Person p in Model)
+              
+
+
+            {
+                                <tbody>
+                                    <tr>
+                                      
+                                        <td>@p.Id</td>
+                                    <td>@p.FirstName</td>
+                                    <td>@p.LastName</td>
+                                        <td>@p.Email</td>
+                                   @*     <td>@p.DateBirth</td> *@
+                                        <td>@p.image</td>
+                                        <td>@p.Country</td>
+                                </tr>
+                                        </tbody> 
+            }}
+           
+            </table>
+    
+    
+    </div>
 

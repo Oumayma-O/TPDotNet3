@@ -1,0 +1,45 @@
+﻿@model TP33.Models.Person
+
+@{
+    ViewData["Title"] = "Search";
+}
+
+
+
+@{
+    if (ViewBag.notFound)
+    {
+        <div  text-align:center class="alert-danger">
+            PERSON NOT FOUND
+        </div>
+    }
+}
+<h4>Person</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="search">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input name="first_name" asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="Country" class="control-label"></label>
+                <input name="country" asp-for="Country" class="form-control" />
+                <span asp-validation-for="Country" class="text-danger"></span>
+            </div>
+            <div class="form-group" style=" margin: 2vw; ">
+                <input type="submit" value="SEARCH" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

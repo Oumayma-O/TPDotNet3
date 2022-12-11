@@ -7,11 +7,12 @@
         public int LastName { get; set; }
         public string Email { get; set; }
         public string DateBirth { get; set; }
+        public string image { get; set; }
         public string Country { get; set; }
 
-        public Person(int Id, string FirstName ,string Lastname , string Email , string DateBirth , string Country)
+        public Person(int Id, string FirstName ,string Lastname , string Email ,string image , string Country)
         {
-            Id = Id; FirstName = FirstName; LastName = LastName; Email = Email; DateBirth = DateBirth; Country = Country;
+            this.Id = Id; this.FirstName = FirstName; this.LastName = LastName; this.Email = Email;  this.image = image; this.Country = Country;
 
         }
         public Person()
