@@ -13,28 +13,28 @@
     Person p = Model; 
     if ( Model == null){
 
-        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+    <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
 
-            <div class="card-header">
-                Person not found 
-            </div>
+                    <div class="card-header">
+                        Person not found 
+                    </div>
 
-  </div>
+    </div>
 
    }
    else{
 
-       <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-            <div class="card-header">@p.FirstName </div>
-            <div class="card-body">
-                <h5 class="card-title">@p.Id</h5>
-                <h5 class="card-title">@p.LastName</h5>            
-                <h5 class="card-title">@p.Country</h5>
-                <h5 class="card-title">@p.Email</h5>
-                <h5 class="card-title">@p.image</h5>
-            </div>
- 
-  </div>
+    <div class="card text-white bg-info mb-3" style="max-width: 18rem; display: flex;justify-content:space-evenly; align-items:center;width:100% ">
+                    <div class="card-header">@p.FirstName </div>
+                    <div class="card-body">
+                        <h5 class="card-title">@p.Id</h5>
+                        <h5 class="card-title">@p.LastName</h5>            
+                        <h5 class="card-title">@p.Country</h5>
+                        <h5 class="card-title">@p.Email</h5>
+                        <h5 class="card-title">@p.image</h5>
+                    </div>
+         
+    </div>
    }
 
 

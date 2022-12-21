@@ -23,6 +23,7 @@ namespace TP33.Models
                 string last_name = (string)Reader["last_name"];
                 string email = (string)Reader["Email"];
                 //string DateBirth = (string)Reader["DateBirth"];
+              
                 string image = (string)Reader["image"];
                 string country = (string)Reader["Country"];
                 list.Add(new Person(id, first_name, last_name, email, image, country));

@@ -1,10 +1,15 @@
+using Microsoft.EntityFrameworkCore;
 using System.Data.SQLite;
 using System.Diagnostics;
+using TP33.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
+
+
 
 var app = builder.Build();
 
